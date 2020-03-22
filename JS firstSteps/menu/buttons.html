@@ -1,0 +1,133 @@
+<body>
+<style>
+    button{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<script>
+ /*    for( n = 1; n <= 25; n++ ){
+        
+        if( n % 2 == 0 ){
+            document.write(
+                `<button>.</button>`
+            )
+        }else{
+        document.write(
+            `<button>X</button>`
+        )   
+        }
+        
+        if ( n % 5 == 0 ){
+            document.write(
+                ` <br>`
+            )
+        }
+    } */
+    
+/*     var n = 1;
+
+    while( n <= 25 ){
+        if( n % 2 == 0 ){
+            document.write(
+                `<button>.</button>`
+            )
+        }else{
+        document.write(
+            `<button>X</button>`
+        )   
+        }
+        
+        if ( n % 5 == 0 ){
+            document.write(
+                ` <br>`
+            )
+        }
+        n++;
+    } */
+
+  /*  
+    for( n = 1; n <= 9; n++ ){
+        if( n % 3 == 0 ){
+        document.write(
+            ` <button>.</button> `
+        )
+        }else{
+            document.write(
+                `<button>#</button>`
+            )
+        }
+        if( n % 3 == 0){
+            document.write(
+                `<br>`
+            )
+        }
+    } 
+ */
+/*     var n = 1;
+
+    while( n <= 9 ){
+        if( n % 3 == 0){
+        document.write(
+            `<button>.</button>`
+        )
+        }else{
+            document.write(
+            `<button>0</button>`
+        )
+        }
+        if( n % 3 == 0){
+            document.write(
+                `<br>`
+            )
+        }
+        n++;
+    }  */
+   /*  for( n = 1; n <= 20; n++){
+        document.write(
+            `<button>1</button>`
+        )
+        if( n % 4 == 0){
+            document.write(
+                `<br>`
+            )
+        }
+    }
+ */
+    for ( n = 1; n <= 6; n++ ){
+
+        w = 100;
+        h = 100;
+        t = 0;
+        
+        if ( n == 1){
+            w = 200
+        }
+        if( n == 6){
+            w = 300;
+            t = -100;
+        }
+        if( n == 5){
+            w = 200
+            h = 200
+            t = -100
+        }
+        if( n == 4){
+            t = -100
+        }
+      
+        document.write(
+            `<img style="transform:translateY(${t}px)" src="https://i.picsum.photos/id/2${n}/${w}/${h}.jpg"/>`
+        )
+        
+        if( n == 5 || n == 2|| n == 3){
+            document.write(
+                `<br>`
+            )
+        }
+    
+    }
+
+    </script>
+</body>
