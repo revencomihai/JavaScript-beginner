@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul li{
+            text-decoration: none;
+            list-style: none;
+        }
+        #action{
+             width: 300px;
+            margin-left: 40px;
+            margin: 0 auto;
+        }
+        .pos{
+            width: 500px;
+            margin: 200px auto;
+        }
+        h3{
+            text-align: center;
+            font-size: 26px;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            color: rgb(122, 122, 122);
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            padding:0 10px;
+        }
+        button{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pos">
+        <h3>Celsius to Farenheit converter</h1>
+            <p>The formula for converting is (<b>input value</b> - 32) * 0.5555555556</p>
+        <ul id="message">
+            <li></li>
+        </ul>
+        <div id="action">
+            <input id="celsius" type="text" placeholder="Temperature in Celsius">
+            <button onclick="convert()">CONVERT</button>
+        </div>
+    </div>
+    <script>
+        let message = document.getElementById("message")
+        let input = document.getElementById("celsius")
+        const digit = 0.5555555556
+
+        function convert(){
+
+            let ident = input.value 
+            result = (ident - 32) * digit
+            if( input.value.length === 0 ){
+                alert("The input can't be empty")
+            }else{
+            message.innerHTML +=  `<li>${result}</li>`
+            document.getElementById("celsius").value = ``
+        }
+    }
+
+
+    </script>
+</body>
+</html>

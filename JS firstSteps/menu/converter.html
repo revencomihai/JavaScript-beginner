@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const EUR_2_MDL = 18.50
+        const USD_2_MDL = 17.00
+
+        function convert( money, koefficient ) {
+        result = money * koefficient;
+        return result
+    }
+
+    // USAGE
+    /* let money_eur = 100
+    let money_mdl = convert( money_eur, EUR_2_MDL ) */
+
+    let money_dol = 100
+    let money_mdl = convert( money_dol, USD_2_MDL)
+    alert( money_mdl )
+    </script>
+</body>
+</html>
