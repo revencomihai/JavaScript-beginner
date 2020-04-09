@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var username_input = prompt("username:?");          // "user@mymail.local"
+    var password_input = prompt("password:?");          // "myp@ss123";
+    var confirm__input = prompt("confirm password:?");  // "myp@ss123";
+    // ... ???
+
+    username_input = username_input.replace(/\s/g, '');
+
+    if ( username_input.length > 3 && password_input.length > 3 && password_input === "myp@ss123" && password_input.value == confirm__input.value && username_input.includes("@" , ".") && username_input === "user@mymail.local" ) {
+        alert("registration complete");
+    }else if( username_input.length < 3 && password_input.length < 3){
+        alert("Wrong values or less than 3 ");
+    }else if( password_input.value != confirm__input.value ){
+        alert("Passwords do not match")
+    }else if( username_input.indexOf("@", ".") == -1 ){
+        alert("username is not email")
+    }else{
+        alert("smth is wrong")
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var version_old    = "1.0.0";
+        var version_new    = "2.0.0";
+
+        if ( version_old.charAt(0) < version_new.charAt(0) ) {
+            alert(`Version new is the fresh one, we're dealing with a major update`);
+        }else if( version_old.charAt(2) != version_new.charAt(2) ) {
+            alert(`We're dealing with a minor update`);
+        }
+    </script>
+</body>
+</html>
