@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="update()">
+    <div>
+    <input id="taskInput" type="text" placeholder="Type in your task">
+    <input id="nameInput" type="text" placeholder="Name">
+    <button onclick="add()">ADD</button>
+    </div>
+    <div class="column">
+    <ul id="taskList">
+       
+    </ul>
+    </div>
+    
+    <div class="column" id="editBlock">
+    <input id="taskInputEdit" type="text" placeholder="Type in your task"> <br>
+    <input id="nameInputEdit" type="text" placeholder="Name"> <br>
+    <div id="editButton"></div>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>

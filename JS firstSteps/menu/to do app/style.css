@@ -1,0 +1,9 @@
+.column{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+#editBlock{
+    padding : 20px;
+    display: none;
+}
